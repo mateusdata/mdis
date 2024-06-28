@@ -256,7 +256,7 @@ export const frases: Frase[] = [
             "peso,",
             "e",
             "de fato",
-            "estava visivelmente mais magro"
+            "estava visivelmente mais magro."
         ],
         ordem: [1 ,2 ,3, 4, 5, 6]
     },
