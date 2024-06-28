@@ -129,7 +129,7 @@ export const frases: Frase[] = [
             "Ele não desistiu",
             "após o primeiro obstáculo,",
             "pelo contrário",
-            "trabalhou ainda mais duro"
+            "trabalhou ainda‎   mais duro"
         ],
         ordem: [1 ,2 ,3, 4, 5, 6]
     },
@@ -179,7 +179,7 @@ export const frases: Frase[] = [
         partes: [
             "Ele não respondeu",
             "à minha mensagem,",
-            "mas",
+            "mas‎",
             "de qualquer forma",
             "irei ao encontro",
             "na hora combinada"
@@ -192,7 +192,7 @@ export const frases: Frase[] = [
             "pode ser cancelado",
             "por causa",
             "da chuva,",
-            "mas",
+            "mas‎",
             "de qualquer forma",
             "estaremos prontos",
             "para ir"

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import 'tailwindcss/tailwind.css';
 import { frases } from '../utils/frases';
+import { conectivos } from '../utils/conectivos';
 
 // Tipo para representar uma frase com seu marcador
 interface Frase {
@@ -77,12 +78,39 @@ const FraseOrganizada: React.FC<{ frase: Frase }> = ({ frase }) => {
             onClick={() => handleClick(indice + 1)}
             className={`inline-block mx-1 my-1 px-2 py-1 border rounded-lg ${selecionados.includes(indice + 1)
               ? 'bg-blue-300 text-white cursor-not-allowed'
-              : 'bg-white  text-black font-extrabold  hover:bg-gray-300'
+              : 'bg-white text-black font-extrabold hover:bg-gray-300'
               }`}
           >
-            {parte}
+            {conectivos.some(conectivo => {
+              // Verifica se a parte contém o conectivo exato como uma palavra inteira
+              const palavrasParte = parte.split(' ');
+              const conectivoPalavras = conectivo.split(' ');
+
+              for (let i = 0; i <= palavrasParte.length - conectivoPalavras.length; i++) {
+                if (conectivoPalavras.every((word, index) => palavrasParte[i + index] === word)) {
+                  // Verifica se o conectivo não está precedido por outra palavra
+                  if (
+                    (i > 0 && conectivos.includes(palavrasParte[i - 1].toLowerCase())) ||
+                    (i + conectivoPalavras.length < palavrasParte.length &&
+                      conectivos.includes(palavrasParte[i + conectivoPalavras.length].toLowerCase()))
+                  ) {
+                    return false; // Ignora se o conectivo não é uma palavra inteira
+                  }
+                  return true;
+                }
+              }
+
+              return false;
+            }) ? (
+              <span className="text-red-500">{parte}</span>
+            ) : (
+              <span>{parte}</span>
+            )}
           </button>
         ))}
+
+
+
       </p>
       <p className="text-gray-700 mb-2">Seleção: {selecionados.map(i => `${embaralhado[i - 1]}`).join(" ")}</p>
       <p className={`text-lg font-semibold ${mensagem === "Correto!" ? 'text-green-500' : 'text-red-500'}`}>{mensagem}</p>
