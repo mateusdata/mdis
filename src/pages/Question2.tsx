@@ -8,6 +8,7 @@ interface DiscourseMarker {
   id: string;
   content: string;
 }
+
 const discourseMarkers: DiscourseMarker[] = [
   { id: '1', content: 'no entanto' },
   { id: '2', content: 'ainda que' },
@@ -48,6 +49,13 @@ const arrayQuestao = [
   "Apresenta argumentos que se somam à conclusão do argumento anterior, aumentando sua força argumentativa, que pode ser tanto positiva como negativa."
 ];
 
+const shuffleArray = (array: any[]) => {
+  return array
+    .map((value) => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+};
+
 const Questao: React.FC<{ index: number }> = ({ index }) => {
   const [selectedValues, setSelectedValues] = useState<string[]>([]);
   const [feedback, setFeedback] = useState('');
@@ -71,7 +79,7 @@ const Questao: React.FC<{ index: number }> = ({ index }) => {
   const isCorrect = feedback === 'Resposta correta!';
 
   return (
-    <div className={`bg-gray-200 rounded-lg  hover:bg-gray-300 p-4 mb-4 w-full ${isCorrect ? 'border-2 border-green-500' : ''}`}>
+    <div className={`bg-gray-200 rounded-lg  hover:bg-gray-300 p-3 mb-4  ${isCorrect ? 'border-2 border-green-500' : ''}`}>
       <h3 className="text-sm font-semibold mb-2">{arrayQuestao[index]}</h3>
       <Select
         mode="multiple"
@@ -80,7 +88,7 @@ const Questao: React.FC<{ index: number }> = ({ index }) => {
         onChange={handleChange}
         value={selectedValues}
       >
-        {discourseMarkers.map(marker => (
+        {shuffleArray(discourseMarkers).map(marker => (
           <Option key={marker.id} value={marker.content}>
             {marker.content}
           </Option>
@@ -92,13 +100,17 @@ const Questao: React.FC<{ index: number }> = ({ index }) => {
 };
 
 const App: React.FC = () => (
-  <div className="flex flex-col flex-nowrap  md:pt-8 bg-white h-screen justify-center md:justify-center w-full items-center p-4">
-    <h1 className='text-lg font-bold pt-64 md:pt-0 mb-12'> Selecione os marcadores do discurso e agrupe-os na descrição adequada.
-    </h1>
-    <div className="flex flex-col">
-      {arrayQuestao.map((questao, index) => (
-        <Questao key={index} index={index} />
-      ))}
+  <div className="flex justify-center mt-4  p-3 ">
+    <div>
+      <div className='w-full '>
+        <h1 className='text-lg font-bold text-center mb-8 '> Selecione os marcadores do discurso e agrupe-os na descrição adequada.
+        </h1>
+      </div>
+      <div className="flex flex-col w-full gap-2 border-2 border-red-50">
+        {arrayQuestao.map((questao, index) => (
+          <Questao key={index} index={index} />
+        ))}
+      </div>
     </div>
   </div>
 );
