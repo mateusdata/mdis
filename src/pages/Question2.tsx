@@ -23,7 +23,7 @@ const discourseMarkers: DiscourseMarker[] = [
   { id: '12', content: 'por assim dizer' },
   { id: '13', content: 'ainda por cima' },
   { id: '14', content: 'além disso' },
-  { id: '14', content: 'pelo contrário' },
+  { id: '15', content: 'pelo contrário' },
 ];
 
 const respostasCorretas = [
