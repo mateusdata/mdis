@@ -50,7 +50,7 @@ const FraseOrganizada: React.FC<{ frase: Frase }> = ({ frase }) => {
       // Caso contrário, adiciona à lista de selecionados
       const novaSelecao = [...selecionados, indice];
       setSelecionados(novaSelecao);
-  
+
       // Verifica se todas as partes foram selecionadas
       if (novaSelecao.length === frase.ordem.length) {
         const ordemSelecionada = novaSelecao.map(i => mapaIndices.get(i));
@@ -62,22 +62,22 @@ const FraseOrganizada: React.FC<{ frase: Frase }> = ({ frase }) => {
       }
     }
   };
-  
+
 
   const handleReset = () => {
     resetarJogo();
   };
 
   return (
-    <div className="p-4 border rounded-lg  shadow-md bg-gray-100">
+    <div className={`p-4 border rounded-lg  shadow-md bg-gray-100 ${mensagem === "Correto!" && " border border-green-600"}`}>
       <p className="mb-4">
         {embaralhado.map((parte, indice) => (
           <button
             key={indice}
             onClick={() => handleClick(indice + 1)}
             className={`inline-block mx-1 my-1 px-2 py-1 border rounded-lg ${selecionados.includes(indice + 1)
-              ? 'bg-green-300 text-white cursor-not-allowed'
-              : 'bg-blue-500 text-white hover:bg-blue-700'
+              ? 'bg-blue-300 text-white cursor-not-allowed'
+              : 'bg-white  text-black font-extrabold  hover:bg-gray-300'
               }`}
           >
             {parte}
@@ -102,18 +102,21 @@ const App: React.FC = () => {
   return (
     <div className="container mx-auto p-8 ">
       <h1 className="text-3xl font-bold mb-8 text-center">Frases Organizadas</h1>
-      
+
       <h2 className='text-xl font-bold mb-8 text-center'>
         Ordene as frases a seguir e utilize o marcador
         do discurso destacado para atribuir-lhes
         o sentido correto a cada uma das frases.
       </h2>
-      
+
       <div className="space-y-8">
         {frases.map((frase, index) => (
-          <FraseOrganizada key={index} frase={frase} />
+          <div>
+            <span>Questão {index + 1}</span>
+            <FraseOrganizada key={index} frase={frase} />
+          </div>
         ))}
-      
+
       </div>
     </div>
   );
