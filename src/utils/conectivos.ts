@@ -15,5 +15,6 @@ export const conectivos: string[] = [
     "além disso,",
     "Pois não,",
     "ainda",
-    "de qualquer forma"
+    "de qualquer forma",
+    "por assim dizer."
 ];

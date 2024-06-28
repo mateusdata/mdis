@@ -31,7 +31,7 @@ export const frases: Frase[] = [
             "em outra cidade,",
             "encontrar um novo apartamento",
             "e aí",
-            "e arrumar suas coisas,",
+            "e arrumar suas coisas.",
             "muito boa",
             "incluindo",
             "começou a fazer os preparativos para a mudança,",
@@ -46,7 +46,7 @@ export const frases: Frase[] = [
             "comecei a assistir à série",
             "baseada nele."
         ],
-        ordem: [1 ,2 ,3, 4] // A ordem correta dos elementos
+        ordem: [1, 2, 3, 4] // A ordem correta dos elementos
     },
     {
         partes: [
@@ -59,7 +59,7 @@ export const frases: Frase[] = [
             "em uma revista científica",
             "renomada."
         ],
-        ordem: [1 ,2 ,3, 4, 5, 6, 7, 8]
+        ordem: [1, 2, 3, 4, 5, 6, 7, 8]
     },
     {
         partes: [
@@ -69,7 +69,7 @@ export const frases: Frase[] = [
             "finalmente comprou o carro",
             "dos seus sonhos."
         ],
-        ordem: [1 ,2 ,3, 4, 5, 6] // A ordem correta dos elementos
+        ordem: [1, 2, 3, 4, 5] // A ordem correta dos elementos
     },
     {
         partes: [
@@ -80,7 +80,7 @@ export const frases: Frase[] = [
             "decidimos assistir",
             "pela transmissão ao vivo."
         ],
-        ordem: [1 ,2 ,3, 4, 5, 6] // A ordem correta dos elementos
+        ordem: [1, 2, 3, 4, 5, 6] // A ordem correta dos elementos
     },
     {
         partes: [
@@ -91,29 +91,38 @@ export const frases: Frase[] = [
             "esperar por uma mesa",
             "disponível no restaurante."
         ],
-        ordem: [1 ,2 ,3, 4, 5, 6] 
+        ordem: [1, 2, 3, 4, 5, 6]
     },
     {
         partes: [
-            "Apesar das dificuldades,",
-            "ele",
-            "ainda",
-            "acredita que pode alcançar",
-            "seus objetivos."
+            "Ele se tornou",
+            "o mentor de muitos jovens na comunidade,",
+            "por assim dizer.",
+            "Sempre disponível",
+            "para dar conselhos e orientar,",
+            "ele desempenha",
+            "um papel crucial",
+            "no desenvolvimento",
+            "das futuras gerações."
         ],
-        ordem: [1 ,2 ,3, 4, 5] 
-    },
+        ordem: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    }, //ques~tao nova adicionada
+
 
     {
         partes: [
-            "Eles estão",
-            "casados há",
-            "mais de 20 anos e",
-            "ainda",
-            "são muito felizes juntos"
+            "A internet é",
+            "a espinha dorsal",
+            "da nossa comunicação moderna,",
+            "por assim dizer.",
+            "Sem ela,",
+            "muitas das nossas atividades diárias",
+            "simplesmente não",
+            "seriam possíveis."
         ],
-        ordem: [ 1 ,2 ,3, 4, 5]
-    },
+        ordem: [1, 2, 3, 4, 5, 6, 7, 8]
+    }, //ques~tao nova adicionada
+
     {
         partes: [
             "Não estou cansado",
@@ -122,7 +131,7 @@ export const frases: Frase[] = [
             "de energia",
             "depois do treino"
         ],
-        ordem: [1 ,2 ,3, 4, 5]
+        ordem: [1, 2, 3, 4, 5]
     },
     {
         partes: [
@@ -131,7 +140,7 @@ export const frases: Frase[] = [
             "pelo contrário",
             "trabalhou ainda‎   mais duro"
         ],
-        ordem: [1 ,2 ,3, 4, 5, 6]
+        ordem: [1, 2, 3, 4]
     },
     {
         partes: [
@@ -141,7 +150,7 @@ export const frases: Frase[] = [
             "está localizada em um bairro",
             "tranquilo"
         ],
-        ordem: [1 ,2 ,3, 4, 5]
+        ordem: [1, 2, 3, 4, 5]
     },
 
     {
@@ -153,18 +162,7 @@ export const frases: Frase[] = [
             "tem uma vida noturna",
             "muito animada"
         ],
-        ordem: [1 ,2 ,3, 4, 5, 6]
-    },
-    {
-        partes: [
-            "Preciso terminar",
-            "este relatório",
-            "hoje,",
-            "se não",
-            "o chefe vai",
-            "ficar muito irritado"
-        ],
-        ordem: [1 ,2 ,3, 4, 5, 6]
+        ordem: [1, 2, 3, 4, 5, 6]
     },
     {
         partes: [
@@ -173,7 +171,7 @@ export const frases: Frase[] = [
             "perderemos",
             "o início do filme"
         ],
-        ordem: [1 ,2 ,3, 4]
+        ordem: [1, 2, 3, 4]
     },
     {
         partes: [
@@ -184,7 +182,7 @@ export const frases: Frase[] = [
             "irei ao encontro",
             "na hora combinada"
         ],
-        ordem: [1 ,2 ,3, 4, 5, 6]
+        ordem: [1, 2, 3, 4, 5, 6]
     },
     {
         partes: [
@@ -197,7 +195,7 @@ export const frases: Frase[] = [
             "estaremos prontos",
             "para ir"
         ],
-        ordem: [1 ,2 ,3, 4, 5, 6, 7, 8]
+        ordem: [1, 2, 3, 4, 5, 6, 7, 8]
     },
     {
         partes: [
@@ -206,7 +204,7 @@ export const frases: Frase[] = [
             "estivesse se sentindo",
             "um pouco doente"
         ],
-        ordem: [1 ,2 ,3, 4]
+        ordem: [1, 2, 3, 4]
     },
     {
         partes: [
@@ -216,7 +214,7 @@ export const frases: Frase[] = [
             "houvesse muitas",
             "críticas inicialmente"
         ],
-        ordem: [1 ,2 ,3, 4, 5]
+        ordem: [1, 2, 3, 4, 5]
     },
     {
         partes: [
@@ -228,7 +226,7 @@ export const frases: Frase[] = [
         ],
         ordem: [1, 2, 3, 4, 5]
     },
-   
+
     {
         partes: [
             "Tive uma semana",
@@ -238,7 +236,7 @@ export const frases: Frase[] = [
             "precisei trabalhar no",
             "final de semana"
         ],
-        ordem: [1 ,2 ,3, 4, 5, 6]
+        ordem: [1, 2, 3, 4, 5, 6]
     },
     {
         partes: [
@@ -249,7 +247,7 @@ export const frases: Frase[] = [
             "de fato",
             "estava visivelmente mais magro."
         ],
-        ordem: [1 ,2 ,3, 4, 5, 6]
+        ordem: [1, 2, 3, 4, 5, 6]
     },
     {
         partes: [
@@ -260,7 +258,7 @@ export const frases: Frase[] = [
             "foram os primeiros",
             "a chegar."
         ],
-        ordem: [1 ,2 ,3, 4, 5, 6]
+        ordem: [1, 2, 3, 4, 5, 6]
     },
     {
         partes: [
@@ -269,7 +267,7 @@ export const frases: Frase[] = [
             "posso",
             "ajudar?"
         ],
-        ordem: [1 ,2 ,3, 4]
+        ordem: [1, 2, 3, 4]
     },
     {
         partes: [
@@ -280,7 +278,7 @@ export const frases: Frase[] = [
             "Pois não,",
             "aqui está."
         ],
-        ordem: [1 ,2 ,3, 4, 5, 6]
+        ordem: [1, 2, 3, 4, 5, 6]
     }
 
 
