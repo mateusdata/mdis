@@ -42,7 +42,7 @@ const arrayQuestao = [
   "Apresenta concessões.",
   "Apresenta novas informações ao discurso com um vínculo consecutivo.",
   "Reformula o que foi dito.",
-  "Verifica uma interação entre os falantes.",
+  "Verifica uma interação entre os interlocutores.",
   "Apresenta um membro do discurso como fato verdadeiro e, consequentemente, com mais força argumentativa que outro argumento.",
   "Apresenta um membro do discurso utilizado de modo inexato, como uma ideia aproximada, não literal.",
   "Apresenta argumentos que se somam à conclusão do argumento anterior, aumentando sua força argumentativa, que pode ser tanto positiva como negativa."
