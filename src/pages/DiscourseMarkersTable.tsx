@@ -19,43 +19,44 @@ const columns: ColumnsType<DataType> = [
         title: 'Marcadores',
         dataIndex: 'marcadores',
         key: 'marcadores',
-        width: '15%',
+        width: 'auto',
     },
     {
         title: 'Variações',
         dataIndex: 'variacoes',
         key: 'variacoes',
-        width: '10%',
+        width: 'auto',
     },
     {
         title: 'Equivalências ES',
         dataIndex: 'equivalencias_es',
         key: 'equivalencias_es',
-        width: '15%',
+        width: 'auto',
     },
     {
         title: 'O que é',
         dataIndex: 'o_que_e',
         key: 'o_que_e',
-        width: '20%',
+        width: 'auto',
     },
     {
         title: 'Escrito',
         dataIndex: 'escrito',
         key: 'escrito',
-        width: '20%',
+        width: 'auto',
+
     },
     {
         title: 'Comentário',
         dataIndex: 'comentario',
         key: 'comentario',
-        width: '10%',
+        width: 'auto',
     },
     {
         title: 'Oral',
         dataIndex: 'oral',
         key: 'oral',
-        width: '15%',
+        width: 'auto',
         render: (oral: { descricao: string; descricaoVideo: string }) => (
             <div>
                 <p>{oral.descricao}</p>
@@ -69,7 +70,7 @@ const columns: ColumnsType<DataType> = [
         title: 'Comentário Video',
         dataIndex: 'comentariovideo',
         key: 'comentariovideo',
-        width: '15%',
+        width: 'auto',
     },
 ];
 
