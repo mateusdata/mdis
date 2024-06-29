@@ -101,7 +101,7 @@ const App: React.FC = () => (
   <div className="flex justify-center mt-4  p-3 ">
     <div>
       <div className='w-full '>
-        <h1 className='text-lg font-bold text-center mb-8'> Selecione os marcadores do discurso e agrupe-os na descrição adequada.
+        <h1 className='text-lg font-bold text-center mb-8'> selecione o marcador do discurso adequado a cada descrição.
         </h1>
       </div>
       <div className="flex flex-col w-full gap-2 border-red-50">

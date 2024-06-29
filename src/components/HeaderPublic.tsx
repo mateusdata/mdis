@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function HeaderPublic() {
-
+const [currentPage, setCurrentPage] = useState<number>(1)
     useEffect(() => {
         const handleClickOutside = (event: any) => {
             if (!event.target.closest('header')) {
@@ -21,16 +21,10 @@ export default function HeaderPublic() {
     };
 
     const [openMenu, setOpenMenu] = useState(false)
-    const links = [
-        { name: ' Início', url: '/' },
-        { name: 'Como funciona', url: '/como-funciona' },
-        { name: ' Preços', url: '/precos' },
-    ];
-
-
+ 
 
     return (
-        <header className="flex  bg-cyan-500 flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm py-3 md:py-0">
+        <header className="flex  bg-[#407aff] flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm py-3 md:py-0">
             <nav className="max-w-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8" aria-label="Global">
                 <div className="relative md:flex md:items-center md:justify-between">
                     <div className="flex items-center justify-between">
@@ -83,23 +77,23 @@ export default function HeaderPublic() {
                             <div
                                 className={` ${openMenu ? "flex" : "hidden"} md:flex flex-col gap-x-0 mt-5 divide-y divide-dashed divide-gray-200 md:flex-row md:items-center md:justify-end md:gap-x-7 md:mt-0 md:ps-7 md:divide-y-0 md:divide-solid dark:divide-neutral-700`}>
 
-                                <Link to={"/"} className="text-md font-bold text-gray-50 hover:text-gray-500 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500"
+                                <Link onClick={()=>setCurrentPage(1)} to={"/"} className={`text-[15px] ${currentPage===1 ? "text-white": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
                                    aria-current="page">
-                                   Inicio
+                                   Inicio 
                                 </Link>
-                                  <Link to={"/questao1"} className="text-md font-bold text-gray-50 hover:text-gray-500 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500"
+                                  <Link onClick={()=>setCurrentPage(2)} to={"/questao1"} className={`text-[15px] ${currentPage===2 ? "text-white": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
                                    aria-current="page">
                                    Atividade 1
                                 </Link>
-                                <Link to={"/questao2"} className="text-md font-bold text-gray-50 hover:text-gray-500 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500"
+                                <Link onClick={()=>setCurrentPage(3)} to={"/questao2"} className={`text-[15px] ${currentPage===3 ? "text-white": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
                                    aria-current="page">
                                    Atividade 2
                                 </Link>
-                                <Link to={"/questao3"} className="text-md font-bold text-gray-50 hover:text-gray-500 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500"
+                                <Link onClick={()=>setCurrentPage(4)} to={"/questao3"} className={`text-[15px] ${currentPage===4 ? "text-white": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
                                    aria-current="page">
                                    Atividade 3
                                 </Link>
-                                <Link to={"/sobre"} className="text-md font-bold text-gray-50 hover:text-gray-500 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500"
+                                <Link onClick={()=>setCurrentPage(5)} to={"/sobre"} className={`text-[15px] ${currentPage===5 ? "text-white": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
                                    aria-current="page">
                                    Sobre
                                 </Link>

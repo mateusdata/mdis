@@ -70,7 +70,7 @@ const FraseOrganizada: React.FC<{ frase: Frase }> = ({ frase }) => {
   };
 
   return (
-    <div className={`p-4 border rounded-lg  shadow-md bg-gray-100 ${mensagem === "Correto!" && " border border-green-600"}`}>
+    <div className={`p-4 border rounded-lg  shadow-md bg-gray-200 ${mensagem === "Correto!" && " border border-green-600"}`}>
       <p className="mb-4">
         {embaralhado.map((parte, indice) => (
           <button
@@ -129,7 +129,6 @@ const App: React.FC = () => {
 
   return (
     <div className="container mx-auto p-8 ">
-      <h1 className="text-3xl font-bold mb-8 text-center">Frases Organizadas</h1>
 
       <h2 className='text-xl font-bold mb-8 text-center'>
         Ordene as frases a seguir e utilize o marcador
