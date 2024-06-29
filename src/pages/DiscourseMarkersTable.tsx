@@ -15,7 +15,7 @@ const DiscourseMarkersTable: React.FC = () => {
                 </h2>
                 <h3 className='text-justify font-medium text-md mb-3'>
                     Marcadores do Discurso são unidades linguísticas advindas de diferentes classes gramaticais e
-                    também combinadas entre eleas. Não são variáveis e são indiferentes à composição sintática
+                    também combinadas entre elas. Não são variáveis e são indiferentes à composição sintática
                     de um discurso. Isto é, seu valor está na inferência de sentidos atribuídos
                     a essa unidade. Por isso, Zorraquino e Portolés (2000) afirmam que os marcadores
                     do discurso guiam o interlocutor para a inferência.
