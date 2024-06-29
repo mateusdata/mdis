@@ -1,16 +1,15 @@
 import React from 'react'
-import GlobalLayout from '../layouts/GlobalLayout'
 import { Link } from 'react-router-dom'
 
 export default function Home() {
     return (
-        <GlobalLayout>
+        <>
 
             <div className="relative overflow-hidden">
 
                 <div aria-hidden="true" className="flex absolute -top-96 start-1/2 transform -translate-x-1/2">
-                    <div className="bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"></div>
-                    <div className="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70"></div>
+                    <div className=" to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"></div>
+                    <div className=" h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70"></div>
                 </div>
 
 
@@ -18,7 +17,7 @@ export default function Home() {
                     <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
                         <div className="max-w-2xl text-center mx-auto">
                             <p className="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-pink-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-600">
-                                MDis: Ama visão para 2024
+                                MDis: Uma visão para 2024
                             </p>
 
 
@@ -30,7 +29,7 @@ export default function Home() {
 
 
                             <div className="mt-5 max-w-3xl">
-                                <p className="text-lg text-gray-600 dark:text-neutral-400">Aprenda e Aperfeiçoe o Uso de Marcadores do Discurso de Maneira Eficiente e Didática.</p>
+                                <p className="text-lg text-gray-600 dark:text-neutral-400">Marcadores do Discurso do Português Brasileiro para hispanofalantes</p>
                             </div>
 
 
@@ -62,6 +61,6 @@ export default function Home() {
                 </div>
             </div>
 
-        </GlobalLayout>
+        </>
     )
 }

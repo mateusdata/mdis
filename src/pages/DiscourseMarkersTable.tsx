@@ -6,7 +6,13 @@ import { DataType, columns, data } from '../utils/DetailsTable';
 const DiscourseMarkersTable: React.FC = () => {
     return (
         <div className='md:p-12 p-2'>
-            <h1 className='font-bold text-lg mb-3'>SELEÇÃO-MDis</h1>
+            <h1 className='text-center font-bold text-lg mb-3'>
+                Saiba o que são os marcadores do discurso abaixo e entenda seu uso tanto na língua escrita como na língua oral.
+            </h1>
+            <h2 className='text-center font-medium text-md mb-3'>
+                Além do vídeo indicado, assista várias vezes aos vídeos disponíveis e compreenda como usar e pronunciar corretamente os marcadores do discurso assinalados.
+            </h2>
+
             <div className='p-2 border border-blue-500 shadow-xl rounded-xl'>
                 <Table<DataType>
                     columns={columns}

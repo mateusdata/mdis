@@ -5,23 +5,26 @@ import Question2 from "../pages/Question2";
 import Question3 from "../pages/Question3";
 import NotFound from "../components/NotFound";
 import DiscourseMarkersTable from "../pages/DiscourseMarkersTable";
+import PublicLayout from "../layouts/PublicLayout";
 
 const Router = () => {
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/questao1" element={<Question1 />} />
-        <Route path="/questao2" element={<Question2 />} />
-        <Route path="/questao3" element={<Question3 />} />
-        <Route path="/sobre" element={<DiscourseMarkersTable />} />
+      <PublicLayout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/questao1" element={<Question1 />} />
+          <Route path="/questao2" element={<Question2 />} />
+          <Route path="/questao3" element={<Question3 />} />
+          <Route path="/sobre" element={<DiscourseMarkersTable />} />
 
-        <Route path="*" element={<NotFound />} />
-        DiscourseMarkersTable
+          <Route path="*" element={<NotFound />} />
+          DiscourseMarkersTable
 
 
-      </Routes>
+        </Routes>
+      </PublicLayout>
     </BrowserRouter>
   );
 };

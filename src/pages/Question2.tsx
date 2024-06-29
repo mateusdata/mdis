@@ -104,7 +104,7 @@ const App: React.FC = () => (
         <h1 className='text-lg font-bold text-center mb-8'> Selecione os marcadores do discurso e agrupe-os na descrição adequada.
         </h1>
       </div>
-      <div className="flex flex-col w-full gap-2 border-2 border-red-50">
+      <div className="flex flex-col w-full gap-2 border-red-50">
         {arrayQuestao.map((questao, index) => (
           <Questao key={index} index={index} />
         ))}
