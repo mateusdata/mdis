@@ -29,7 +29,6 @@ const discourseMarkers: DiscourseMarker[] = [
 
 const respostasCorretas = [
   ['no entanto', 'pelo contrário'],
-  ['ainda que'],
   ['e aí', 'enfim', 'daí', 'então'],
   ['ou seja', 'de qualquer forma'],
   ['Pois não?!', 'né?'],
@@ -40,7 +39,6 @@ const respostasCorretas = [
 
 const arrayQuestao = [
   "Apresenta ideias ou conclusões contrárias ao que geralmente se espera com relação ao fato já dito.",
-  "Apresenta concessões.",
   "Apresenta novas informações ao discurso com um vínculo consecutivo.",
   "Reformula o que foi dito.",
   "Verifica uma interação entre os interlocutores.",

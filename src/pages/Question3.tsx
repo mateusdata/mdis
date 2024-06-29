@@ -137,7 +137,7 @@ const respostasCorretas = [
   ['e aí'],
   ['e aí'],
   ['e enfim'],
-  ['e enfim'],
+  ['daí'],
   ['por assim dizer'],
   ['por assim dizer'],
   ['ou seja'],

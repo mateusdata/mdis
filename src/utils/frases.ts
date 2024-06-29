@@ -199,15 +199,6 @@ export const frases: Frase[] = [
     },
     {
         partes: [
-            "Ele foi ao jogo,",
-            "ainda que",
-            "estivesse se sentindo",
-            "um pouco doente"
-        ],
-        ordem: [1, 2, 3, 4]
-    },
-    {
-        partes: [
             "O projeto",
             "foi aprovado,",
             "ainda que",
