@@ -30,6 +30,10 @@ const DiscourseMarkersTable: React.FC = () => {
                     scroll={{ x: 'max-content', y: "70vh" }} // Configuração de scroll horizontal e vertical
                 />
             </div>
+            <div className='h-5 flex items-center justify-center w-full'>
+                <span className='text-md mt-8 text-center w-screen '>Os exemplos em texto escrito foram gerados pelo Chat GPT.</span>
+
+            </div>
         </div>
     );
 };

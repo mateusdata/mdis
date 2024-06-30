@@ -25,7 +25,9 @@ const FraseOrganizada: React.FC<{ frase: Frase }> = ({ frase }) => {
 
   useEffect(() => {
     resetarJogo();
+    // eslint-disable-next-line
   }, [frase]);
+  
 
   const resetarJogo = () => {
     const partesEmbaralhadas = shuffleArray(frase.partes);
@@ -131,9 +133,7 @@ const App: React.FC = () => {
     <div className="container mx-auto p-8 ">
 
       <h2 className='text-xl font-bold mb-8 text-center'>
-        Ordene as frases a seguir e utilize o marcador
-        do discurso destacado para atribuir-lhes
-        o sentido correto a cada uma das frases.
+      Estruture o enunciado observando o uso a funcionalidade do marcador do discurso destacado.
       </h2>
 
       <div className="space-y-8">
