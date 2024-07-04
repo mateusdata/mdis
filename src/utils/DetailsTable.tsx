@@ -81,7 +81,7 @@ export const data: DataType[] = [
         marcadores: 'ou seja',
         variacoes: 'isto é',
         equivalencias_es: 'ES DECIR, ESTO ES',
-        o_que_e: 'DPDE: Apresenta o integrante do discurso em que aparece como explicação ou esclarecimento de tudo ou parte do que foi dito anteriormente:',
+        o_que_e: 'É um reformulador explicativo e pode funcionar como uma paráfrase do argumento anterior, comentando o mesmo tópico, bem como pode não ser uma paráfrase e comentar um tópico distinto, além de apresentar uma consequência.',
         escrito: 'a) Ele é cardiologista, ou seja, especialista em coração.  <br /> b) Ela mora perto do trabalho, ou seja, não precisa pegar trânsito todos os dias."                                                    <br /> c) Ele é vegano, ou seja, não consome nenhum produto de origem animal."   <br />  d) O projeto foi aprovado pelo conselho, ou seja, podemos começar a execução imediatamente."',
         comentario: 'Nos exemplos a e c, o marcador "ou seja" está introduzindo um esclarecimento sobre o que é ser cardiologista e ser vegano respectivamente. Nos exemplos b e d, o marcador introduz uma explicação sobre o que se deve concluir a partir do dito anterioremente: em b, "morar perto do trabalho" , e "o projeto foi aprovado", em d, podem implicar várias coisas, mas o "ou seja" delimita a conclusão a que se deve chegar a partir do que foi dito.',
         oral: {
@@ -95,7 +95,7 @@ export const data: DataType[] = [
         marcadores: 'então',
         variacoes: 'entonces',
         equivalencias_es: 'entonces',
-        o_que_e: `(MARTÍN ZORRAQUINO; PORTOLÉS, 1999), Apresenta um membro do discurso vinculado ao anterior, aportando informações novas ao tópico de caráter geral. Como conector consecutivo, apresenta um sentido de consequência enfraquecido, diferentemente de outros conectores consecutivos.`,
+        o_que_e: `Apresenta um membro do discurso vinculado ao anterior, aportando informações novas ao tópico de caráter geral. Como conector consecutivo, apresenta um sentido de consequência enfraquecido, diferentemente de outros conectores consecutivos.`,
         escrito: `a) "O show foi cancelado, então decidimos ir ao cinema."
        <br /> b)  "Ela não estava se sentindo bem, então foi para casa mais cedo."
        <br /> c) "O trânsito estava horrível, então chegamos atrasados na reunião."
@@ -113,7 +113,7 @@ export const data: DataType[] = [
         marcadores: 'enfim',
         variacoes: 'e enfim',
         equivalencias_es: 'enfín',
-        o_que_e: 'DPDE: Apresenta o membro do discurso em que aparece como conclusão, ao mesmo tempo como encerramento e resumo final (muitas vezes avaliativo) que é extraído de todo ou parte do que foi dito anteriormente.',
+        o_que_e: 'Apresenta o membro do discurso que introduz como uma conclusão de outros membros anteriores [...] este marcador é utilizado para anunciar o término de uma sequência do discurso e apresentar sua conclusão” (p. 4136-4137, tradução nossa). ',
         escrito: `a) "Estudamos a noite toda, fizemos muitos exercícios e, enfim, estávamos preparados para a prova."
        <br /> b)  Tivemos vários contratempos durante a viagem, mas, enfim, chegamos ao nosso destino.
        <br /> c) "Ela passou por muitas dificuldades, mas, enfim, conseguiu realizar seu sonho."
@@ -130,7 +130,7 @@ export const data: DataType[] = [
         marcadores: 'daí',
         variacoes: 'e daí',
         equivalencias_es: 'de ahí',
-        o_que_e: `(MARTÍN ZORRAQUINO; PORTOLÉS, 1999), Apresenta uma consequência que é uma evidência em relação ao que foi dito anteriormente.`,
+        o_que_e: `Apresenta uma consequência que é uma evidencia em relação ao que foi dito anteriormente.`,
         escrito: `a) "Ela terminou o curso, daí conseguiu um emprego excelente."
        <br /> b)  "Estávamos com fome, daí decidimos pedir uma pizza."
        <br /> c) "Ele se machucou jogando futebol, daí foi ao hospital."
@@ -148,7 +148,7 @@ export const data: DataType[] = [
         marcadores: 'no entanto',
         variacoes: 'entretanto',
         equivalencias_es: 'sin embargo',
-        o_que_e: 'DPDE: Apresenta o membro do discurso no qual aparece como uma conclusão contrária a outra que poderia ser inferida a partir de um argumento anterior.',
+        o_que_e: 'Mostra que o membro no que se encontra elimina uma conclusão que se poderia inferir de um membro precedente',
         escrito: `a) "Estudou muito para a prova, no entanto, não conseguiu tirar uma boa nota."
        <br /> b)  "A previsão era de chuva, no entanto, o dia amanheceu ensolarado."
        <br /> c) "Ele se esforçou bastante no trabalho, no entanto, não foi promovido."
@@ -165,7 +165,7 @@ export const data: DataType[] = [
         marcadores: 'pelo contrário',
         variacoes: "    ",
         equivalencias_es: 'al revés, al contrario',
-        o_que_e: 'DPDE: Apresenta o membro do discurso no qual aparece como oposto a outro membro anterior do discurso. Esta oposição pode aparecer como um contraste entre os dois membros ou como uma refutação do primeiro pelo segundo.',
+        o_que_e: 'Apresenta o membro no qual está incluído como contrário a um membro anterior, e também comenta o mesmo tópico do membro do discurso anterior',
         escrito: `a) "Ele não está desanimado com os desafios, pelo contrário, está mais motivado do que nunca."
        <br /> b)  "A previsão do tempo dizia que faria sol, pelo contrário, choveu o dia inteiro."
        <br /> c) "Ela não ficou triste com a notícia, pelo contrário, ficou muito feliz com a novidade."
@@ -183,7 +183,7 @@ export const data: DataType[] = [
         marcadores: 'além disso',
         variacoes: 'além do mais',
         equivalencias_es: 'además',
-        o_que_e: 'DPDE: Apresenta o membro do discurso em que se encontra como um novo argumento que se soma a um anterior. Ambos são argumentos a favor da mesma conclusão, expressa ou implícita. A soma ou adição destes argumentos tem mais força argumentativa do que o primeiro sozinho.',
+        o_que_e: 'Vincula dois membros do discurso com a mesma orientação argumentativa. O segundo facilita inferências que seria difícil conseguir somente com o primeiro.',
         escrito: `a) "O projeto foi bem elaborado e, além disso, teve um excelente feedback dos clientes."
        <br /> b)  "A empresa oferece ótimos salários e, além disso, benefícios como plano de saúde e vale-alimentação."
        <br /> c) "O filme tem uma trama envolvente; além disso, a trilha sonora é incrível."
@@ -200,7 +200,7 @@ export const data: DataType[] = [
         marcadores: 'de qualquer forma',
         variacoes: 'de qualquer maneira; de qualquer jeito',
         equivalencias_es: 'de cualquier manera',
-        o_que_e: 'DPDE: Apresenta o membro do discurso em que aparece como conclusão ou opção mais relevante do que outras que poderiam ser inferidas do membro do discurso anterior, o que perde força.',
+        o_que_e: 'É um reformulador de distanciamento, uma vez este prioriza se distanciar ou eliminar qualquer possibilidade de conclusão que o primeiro membro do discurso apresente. “Seu significado nos obriga a concluir que nem a maneira que o primeiro membro do disurso apresenta, nem todas que sejam possíveis, impedem a conclusão que se mantem na reformulação” (p. 4132, tradução nossa).',
         escrito: `a) "Não conseguimos reservar mesa no restaurante, mas de qualquer forma conseguimos um lugar no bar ao lado."
        <br /> b)  "Ela não aceitou o convite para a festa, mas de qualquer forma nós nos divertimos muito."
        <br /> c) "O resultado do projeto não foi o esperado, mas de qualquer forma aprendemos muito durante o processo."
@@ -218,7 +218,7 @@ export const data: DataType[] = [
         marcadores: 'né',
         variacoes: 'né não?',
         equivalencias_es: 'verdad? a que sí?',
-        o_que_e: `(MARTÍN ZORRAQUINO; PORTOLÉS, 1999), verifica se o locutor aceita ou não o segmento do discurso ao qual está vinculado, buscando a cooperação, compreensão e cumplicidade do interlocutor.`,
+        o_que_e: `Unidades produzidas em direção ao ouvinte, a fim de conseguir alguma corroboração sobre o membro do discurso ao qual remete.`,
         escrito: `a) "O tempo está muito quente hoje, né?"
        <br /> b)  "Você gostou do filme, né?"
        <br /> c) "Precisamos terminar esse relatório até amanhã, né?"
@@ -237,7 +237,7 @@ export const data: DataType[] = [
         marcadores: 'ainda por cima',
         variacoes: 'e ainda encima',
         equivalencias_es: 'encima',
-        o_que_e: 'DPDE: Apresenta um membro do discurso como argumento acrescentado que reforça o sentido de excesso, importância, abuso ou surpresa que se desprende do discurso imediatamente anterior. Este membro anterior pode estar constituído por um único argumento ou por uma série de argumentos que ficam retroativamente caracterizados como uma informação suficiente para chegar a uma determinada conclusão (expressa ou subentendida). A conclusão pode implicar uma valorização tanto positiva como negativa. É mais frequente no registro informal da língua e no discurso oral.',
+        o_que_e: 'Vincula dois membros do discurso com a mesma orientação argumentativa, mas o membro que antece esse marcador discursivo é suficiente para a conlusão a que se deseja chegar.',
         escrito: `a) "Ele perdeu o voo e ainda por cima teve que esperar seis horas no aeroporto."
        <br /> b)  "A festa foi cancelada de última hora e ainda por cima choveu o dia inteiro."
        <br /> c) "O carro quebrou na estrada e ainda por cima não tínhamos sinal de celular."
@@ -254,7 +254,7 @@ export const data: DataType[] = [
         marcadores: 'de fato',
         variacoes: 'de verdade',
         equivalencias_es: 'de hecho',
-        o_que_e: `(MARTÍN ZORRAQUINO; PORTOLÉS, 1999), apresenta um membro do discurso como fato verdadeiro e, consequentemente, com mais força argumentativa que outro argumento`,
+        o_que_e: `O marcador do discurso “de hecho”, do espanhol, é um operador argumentativo que “introduz um membro do discurso como um fato verdadeiro e, consequentemente, com mais força argumentativa que que outro argumento que pudesse ser pensado como discutível ou meramente provável” (p. 4141)tradução nossa)`,
         escrito: `a) "Ele é, de fato, um excelente músico."
        <br /> b)  "O projeto foi, de fato, concluído dentro do prazo estipulado."
        <br /> c) "As mudanças no regulamento são, de fato, necessárias para melhorar o processo."
@@ -271,7 +271,7 @@ export const data: DataType[] = [
         marcadores: 'pois não?',
         variacoes: 'pois não!',
         equivalencias_es: 'sí?',
-        o_que_e: 'PRIBERAM: apresenta solicitude ou disponibilidade para atender alguém, como também indica confirmação.',
+        o_que_e: 'Reflete atitude do interlocutor ao expressar sua disposição ou aceitação, permissão ou concessão em',
         escrito: `a) "Posso te ligar mais tarde para discutirmos esse assunto?" - "Pois não, estarei disponível."
        <br /> b)  - "Deseja fazer um pedido? Pois não!"
        <br /> c) "Posso te oferecer algo para beber?" - "Pois não, um suco seria ótimo."`,
