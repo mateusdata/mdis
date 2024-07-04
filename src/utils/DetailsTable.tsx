@@ -15,10 +15,10 @@ export interface DataType {
 
 export const columns: ColumnsType<DataType> = [
     {
-        title: 'MARCADORES DO DISCURSO',
+        title: 'MARCADORES DISCURSIVOS',
         dataIndex: 'marcadores',
         key: 'marcadores',
-        width: '130px',
+        width: '230px',
     },
     {
         title: 'VARIAÇÕES',
@@ -33,7 +33,7 @@ export const columns: ColumnsType<DataType> = [
         width: '150px',
     },
     {
-        title: 'DESCRIÇÃO',
+        title: 'CLASSIFICAÇÃO (ZORRAQUINO e PORTOLÉS, 1999, p. 4081- 4199)',
         dataIndex: 'o_que_e',
         key: 'o_que_e',
         width: '280px',
@@ -80,7 +80,7 @@ export const data: DataType[] = [
         key: '1',
         marcadores: 'ou seja',
         variacoes: 'isto é',
-        equivalencias_es: 'es decir; o sea',
+        equivalencias_es: 'ES DECIR, ESTO ES',
         o_que_e: 'DPDE: Apresenta o integrante do discurso em que aparece como explicação ou esclarecimento de tudo ou parte do que foi dito anteriormente:',
         escrito: 'a) Ele é cardiologista, ou seja, especialista em coração.  <br /> b) Ela mora perto do trabalho, ou seja, não precisa pegar trânsito todos os dias."                                                    <br /> c) Ele é vegano, ou seja, não consome nenhum produto de origem animal."   <br />  d) O projeto foi aprovado pelo conselho, ou seja, podemos começar a execução imediatamente."',
         comentario: 'Nos exemplos a e c, o marcador "ou seja" está introduzindo um esclarecimento sobre o que é ser cardiologista e ser vegano respectivamente. Nos exemplos b e d, o marcador introduz uma explicação sobre o que se deve concluir a partir do dito anterioremente: em b, "morar perto do trabalho" , e "o projeto foi aprovado", em d, podem implicar várias coisas, mas o "ou seja" delimita a conclusão a que se deve chegar a partir do que foi dito.',
@@ -89,24 +89,6 @@ export const data: DataType[] = [
             descricaoVideo: 'https://youglish.com/pronounce/ou%20seja/portuguese',
         },
         comentariovideo: 'Nessa fala, o "ou seja" intorduz argumentos que explicam o que é " essa nossa capacidade de se colocar no lugar do outro, de adotar a sua perspectiva".',
-    },
-    {
-        key: '2',
-        marcadores: 'e aí',
-        variacoes: 'e então, aí',
-        equivalencias_es: 'y entonces',
-        o_que_e: `(MARTÍN ZORRAQUINO; PORTOLÉS, 1999), Apresenta um membro do discurso vinculado ao anterior, aportando informações novas ao tópico de caráter geral. Como conector consecutivo, apresenta um sentido de consequência enfraquecido, diferentemente de outros conectores consecutivos.`,
-        escrito: `a) Chegamos ao restaurante, e aí percebemos que tínhamos esquecido de fazer a reserva.
-       <br /> b)  Fiz a prova de manhã, e aí fui comemorar com meus amigos.
-       <br /> c) O time marcou um gol nos últimos minutos, e aí garantiu a vitória.
-       <br />  d)  Ele saiu do trabalho mais cedo, e aí decidiu passear no parque.`,
-        comentario: `Nos exemplos a-d, temos o marcador "e aí" introduzindo novas informações vinculadas ao que já foi dito. Essas novas informações se justificam na parte do discurso a qual estão vinculadas.`,
-        oral: {
-            descricao: `No vídeo 2, por exemplo, temos "Quando você não paga o total da sua fatura, você entra no crédito rotativo
-      que está entre as operações de crédito mais caras do mundo em termos de taxas de juros e aí, o efeito bola de neve cresce rapidamente, e aí, quem resolver parcelar o pagamento vai pagar juros elevados de qualquer forma."`,
-            descricaoVideo: 'https://youglish.com/pronounce/e%20a%C3%AD/portuguese',
-        },
-        comentariovideo: `O uso do marcador "e aí" indica que foram adicionadas novas informações vinculadas ao tópico que já se discute, as quais comentam.`,
     },
     {
         key: '3',
@@ -159,24 +141,6 @@ export const data: DataType[] = [
             descricaoVideo: 'https://youglish.com/pronounce/da%C3%AD/portuguese',
         },
         comentariovideo: 'Nesta fala, a consequência evidente introduzida pelo marcador "e daí" está separada dele por conta da oração que leva à tal consequência e está intercalada. Deslocando a oração intercalada "compreendo que toda transformação passa pela gente e que a nossa mente tem muito poder" para o início da frase, e colocando o "e daí" na sequência, conectando com "eu resolvi que eu queria estudar como o nosso cérebro funciona", percebemos claramente a relação de causa e consequência conectada pelo marcador "e daí".',
-    },
-
-
-    {
-        key: '6',
-        marcadores: 'por assim dizer',
-        variacoes: '',
-        equivalencias_es: 'por así decir',
-        o_que_e: 'DPDE: Apresenta um elemento, ao qual afeta, como uma expressão que é utilizada de um modo inexato ou aproximado, que não deve ser interpretada como literal. Evitam-se, assim, responsabilidades diante do interlocutor, pela inexatidão do que foi expresso ou por não saber encontrar outra expressão mais apropriada.',
-        escrito: `a) "Ele é o líder do grupo, por assim dizer, pois sempre toma as decisões importantes."  <br />
-b)  "O projeto está em seus estágios iniciais, por assim dizer, ainda temos muito a desenvolver."
-   <br /> c) "Ela é a 'mãe' do grupo, por assim dizer, porque sempre cuida de todos."`,
-        comentario: 'Nos exemplos a)-   <br /> c), temos o marcador "por assim dizer" que apresenta uma informação que não deve ser concebida com o significado literal. No caso da letra a), ser "líder de um grupo", deveria haver uma nomeação consensual e clara de um membro como líder do grupo. Entretanto, o "por assim dizer" adverte que esse não é o caso, que a informação apresentada deve ser concebida como uma aproximação ao significado de "líder". A mesma coisa pode-se observar na    <br /> c). "Ser mãe" é uma ideia atribuída a um membro do grupo porque enxergam seu comportamento com o grupo como o comportamento de uma mãe com seu filho, ainda que ela não seja, de fato, mãe. Na letra  <br /> b) , o "por assim dizer" adverte ao interlocutor que, ainda que se tenha trabalhado muito no projeto ou passado muito tempo nele (o que não se concebe naturalmente como estágio inicial), há muita coisa para desenvolver, como se estivesse no início.',
-        oral: {
-            descricao: 'No vídeo 1, temos: "Dia após dia estamos piorando por assim dizer, mas interiormente ele fala sobre a possibilidade de não só viver uma condição diferente, mas ele falou do oposto, de vivermos a renovação."',
-            descricaoVideo: 'https://youglish.com/pronounce/por%20assim%20dizer/portuguese',
-        },
-        comentariovideo: 'Nesta fala, o marcador "por assim dizer" destaca "estamos piorando" em um sentido inexato.',
     },
 
     {
@@ -267,24 +231,7 @@ b)  "O projeto está em seus estágios iniciais, por assim dizer, ainda temos mu
         },
         comentariovideo: 'Nessa fala, o "né" é usado para buscar a cumplicidade do interlocutor no discurso. O falante afirmou algo e joga essa afirmação para seu interlocutor corroborar.'
     },
-    {
-        key: '12',
-        marcadores: 'além disso',
-        variacoes: 'e ainda',
-        equivalencias_es: 'además',
-        o_que_e: 'DPDE: Apresenta o membro do discurso em que se encontra como um novo argumento que se soma a um anterior. Ambos são argumentos a favor da mesma conclusão, expressa ou implícita. A soma ou adição destes argumentos tem mais força argumentativa do que o primeiro sozinho.',
-        escrito: `a) "O filme foi incrível. Além disso, a trilha sonora era maravilhosa."
-      "Ela é uma excelente escritora e, além disso, uma ótima pintora."
-       <br /> b)  "A cidade é conhecida pelas suas praias maravilhosas e, além disso, pela sua gastronomia única."
-       <br /> c) "A reunião foi muito produtiva e, além disso, conseguimos resolver alguns problemas pendentes."
-       <br />  d)  "Eles são bons amigos e, além disso, são colegas de trabalho na mesma empresa."`,
-        comentario: 'Nos exemplos, o "além disso" reforça a conclusão a que os outros argumentos estão dirigidos, ao apresentar um argumento que se soma ao já dito.',
-        oral: {
-            descricao: 'No vídeo 2, temos: "E quem tem menos coisas também consegue viver em lugares menores, que custam menos para comprar ou alugar. Além disso, você vai se preocupar menos com dinheiro."',
-            descricaoVideo: 'https://youglish.com/pronounce/al%C3%A9m%20disso/portuguese'
-        },
-        comentariovideo: 'No exemplo, o "além disso" apresenta um argumento que se soma à conclusão do argumento já dito, e o reforça.'
-    },
+   
     {
         key: '13',
         marcadores: 'ainda por cima',

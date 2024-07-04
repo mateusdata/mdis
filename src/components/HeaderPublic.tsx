@@ -77,23 +77,23 @@ const [currentPage, setCurrentPage] = useState<number>(1)
                             <div
                                 className={` ${openMenu ? "flex" : "hidden"} md:flex flex-col gap-x-0 mt-5 divide-y divide-dashed divide-gray-200 md:flex-row md:items-center md:justify-end md:gap-x-7 md:mt-0 md:ps-7 md:divide-y-0 md:divide-solid dark:divide-neutral-700`}>
 
-                                <Link onClick={()=>setCurrentPage(1)} to={"/"} className={`text-[15px] ${currentPage===1 ? "text-white": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
+                                <Link onClick={()=>setCurrentPage(1)} to={"/"} className={`text-[15px] ${currentPage===1 ? "text-gray-800": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
                                    aria-current="page">
                                    Inicio 
                                 </Link>
-                                  <Link onClick={()=>setCurrentPage(2)} to={"/questao1"} className={`text-[15px] ${currentPage===2 ? "text-white": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
+                                  <Link onClick={()=>setCurrentPage(2)} to={"/questao1"} className={`text-[15px] ${currentPage===2 ? "text-gray-800": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
                                    aria-current="page">
                                    Atividade 1
                                 </Link>
-                                <Link onClick={()=>setCurrentPage(3)} to={"/questao2"} className={`text-[15px] ${currentPage===3 ? "text-white": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
+                                <Link onClick={()=>setCurrentPage(3)} to={"/questao2"} className={`text-[15px] ${currentPage===3 ? "text-gray-800": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
                                    aria-current="page">
                                    Atividade 2
                                 </Link>
-                                <Link onClick={()=>setCurrentPage(4)} to={"/questao3"} className={`text-[15px] ${currentPage===4 ? "text-white": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
+                                <Link onClick={()=>setCurrentPage(4)} to={"/questao3"} className={`text-[15px] ${currentPage===4 ? "text-gray-800": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
                                    aria-current="page">
                                    Atividade 3
                                 </Link>
-                                <Link onClick={()=>setCurrentPage(5)} to={"/sobre"} className={`text-[15px] ${currentPage===5 ? "text-white": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
+                                <Link onClick={()=>setCurrentPage(5)} to={"/sobre"} className={`text-[15px] ${currentPage===5 ? "text-gray-800": "text-gray-200"} font-bold  hover:text-gray-800 py-3 md:py-6 dark:text-neutral-400 dark:hover:text-neutral-500`}
                                    aria-current="page">
                                    Sobre
                                 </Link>

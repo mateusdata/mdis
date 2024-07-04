@@ -4,14 +4,12 @@ import { Link } from 'react-router-dom'
 export default function Home() {
     return (
         <>
-
             <div className="relative overflow-hidden min-h-[75vh] p-3">
 
                 <div aria-hidden="true" className="flex absolute -top-96 start-1/2 transform -translate-x-1/2">
                     <div className=" to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"></div>
                     <div className=" h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70"></div>
                 </div>
-
 
                 <div className="relative z-10">
                     <div className="mt-2">
@@ -23,18 +21,15 @@ export default function Home() {
                             <div className="max-w-2xl mx-auto text-center mb-1 2xl:mt-10 ">
                                 <h2
                                     className="text-3xl leading-tight font-bold md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight bg-clip-text bg-gradient-to-r from-cyan-600 to-fuchsia-700 text-transparent">
-                                    MDis: Marcadores do Discurso
+                                    MDis: Marcadores Discursivos    
                                 </h2>
                                 <p className="mt-2 md:px-24 lg:text-lg text-gray-800 dark:text-neutral-200">
-                                    Marcadores do Discurso do Português Brasileiro para hispanofalantes
+                                Ponha em prática seus conhecimentos sobre Marcadores do Discurso e aprenda as estruturas possíveis com essas unidades
+
 
                                 </p>
 
-
                             </div>
-
-
-
 
                             <div className="mt-8 gap-3 flex flex-col justify-center">
                                 <Link
